@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Courses | Course Management System</title>
+
+    <link rel="stylesheet" href="css/search.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h2>📚 CourseHub</h2>
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="search.html" class="active">Search</a>
+            <a href="progress.html">Progress</a>
+            <a href="profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h1>Search Courses</h1>
+        <p>Find your desired course by name, instructor, or category.</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search courses...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Search Results -->
+    <section class="results-section">
+
+        <h2>Search Results</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                    <th>Category</th>
+                    <th>Duration</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="courseTable">
+
+                <tr>
+                    <td>C101</td>
+                    <td>Java Programming</td>
+                    <td>John Smith</td>
+                    <td>Programming</td>
+                    <td>8 Weeks</td>
+                </tr>
+
+                <tr>
+                    <td>C102</td>
+                    <td>HTML & CSS</td>
+                    <td>Sarah Johnson</td>
+                    <td>Web Development</td>
+                    <td>6 Weeks</td>
+                </tr>
+
+                <tr>
+                    <td>C103</td>
+                    <td>JavaScript</td>
+                    <td>David Brown</td>
+                    <td>Web Development</td>
+                    <td>7 Weeks</td>
+                </tr>
+
+                <tr>
+                    <td>C104</td>
+                    <td>Python Programming</td>
+                    <td>Emily Davis</td>
+                    <td>Programming</td>
+                    <td>8 Weeks</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <script src="js/search.js"></script>
+
+</body>
+</html>

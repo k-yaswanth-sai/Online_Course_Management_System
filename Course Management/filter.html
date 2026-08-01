@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Courses | Course Management System</title>
+
+    <link rel="stylesheet" href="css/filter.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h2>📚 CourseHub</h2>
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="filter.html" class="active">Filter</a>
+            <a href="progress.html">Progress</a>
+            <a href="profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </nav>
+
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+
+        <h1>Filter Courses</h1>
+        <p>Select your preferred category, level, and duration.</p>
+
+        <div class="filter-box">
+
+            <div class="filter-group">
+                <label>Category</label>
+
+                <select id="category">
+                    <option value="all">All Categories</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Database">Database</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Difficulty Level</label>
+
+                <select id="level">
+                    <option value="all">All Levels</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Duration</label>
+
+                <select id="duration">
+                    <option value="all">Any Duration</option>
+                    <option value="4 Weeks">4 Weeks</option>
+                    <option value="6 Weeks">6 Weeks</option>
+                    <option value="8 Weeks">8 Weeks</option>
+                    <option value="10 Weeks">10 Weeks</option>
+                </select>
+            </div>
+
+            <button id="filterBtn">
+                <i class="fa-solid fa-filter"></i> Apply Filter
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Filter Results -->
+    <section class="courses-section">
+
+        <h2>Filtered Courses</h2>
+
+        <div class="course-container" id="courseContainer">
+
+            <div class="course-card">
+                <h3>Java Programming</h3>
+                <p><strong>Category:</strong> Programming</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <p><strong>Duration:</strong> 8 Weeks</p>
+                <button>View Course</button>
+            </div>
+
+            <div class="course-card">
+                <h3>HTML & CSS</h3>
+                <p><strong>Category:</strong> Web Development</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <p><strong>Duration:</strong> 6 Weeks</p>
+                <button>View Course</button>
+            </div>
+
+            <div class="course-card">
+                <h3>JavaScript</h3>
+                <p><strong>Category:</strong> Web Development</p>
+                <p><strong>Level:</strong> Intermediate</p>
+                <p><strong>Duration:</strong> 8 Weeks</p>
+                <button>View Course</button>
+            </div>
+
+            <div class="course-card">
+                <h3>Python Programming</h3>
+                <p><strong>Category:</strong> Programming</p>
+                <p><strong>Level:</strong> Intermediate</p>
+                <p><strong>Duration:</strong> 10 Weeks</p>
+                <button>View Course</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/filter.js"></script>
+
+</body>
+</html>

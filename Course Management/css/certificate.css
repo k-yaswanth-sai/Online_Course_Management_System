@@ -1,0 +1,355 @@
+/* ===========================================
+   GENERAL
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    color:#333;
+}
+
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar{
+    background:#0d6efd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.logo span{
+    color:#fff;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#ffd43b;
+}
+
+.logout{
+    background:#dc3545;
+    padding:8px 15px;
+    border-radius:6px;
+}
+
+.logout:hover{
+    background:#bb2d3b;
+    color:#fff;
+}
+
+/* ===========================================
+   PAGE TITLE
+=========================================== */
+
+.page-title{
+    text-align:center;
+    padding:40px 20px 20px;
+}
+
+.page-title h1{
+    color:#0d6efd;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.page-title p{
+    color:#666;
+    font-size:17px;
+}
+
+/* ===========================================
+   CERTIFICATE CONTAINER
+=========================================== */
+
+.certificate-container{
+    width:95%;
+    max-width:1200px;
+    margin:20px auto 50px;
+}
+
+#certificateList{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+/* ===========================================
+   CERTIFICATE
+=========================================== */
+
+.certificate{
+    background:#fff;
+    border:8px solid #0d6efd;
+    border-radius:15px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.certificate h1{
+    color:#0d6efd;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.sub-title{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.certificate h2{
+    font-size:34px;
+    color:#222;
+    margin:20px 0;
+}
+
+.certificate h3{
+    color:#198754;
+    font-size:30px;
+    margin:20px 0;
+}
+
+.certificate p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===========================================
+   DETAILS
+=========================================== */
+
+.details{
+    display:flex;
+    justify-content:space-around;
+    margin-top:40px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.details div{
+    text-align:center;
+}
+
+.details strong{
+    display:block;
+    color:#0d6efd;
+    margin-bottom:8px;
+}
+
+/* ===========================================
+   SIGNATURE
+=========================================== */
+
+.signature{
+    display:flex;
+    justify-content:space-between;
+    margin-top:60px;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.signature div{
+    width:220px;
+    text-align:center;
+}
+
+.signature hr{
+    border:none;
+    border-top:2px solid #333;
+    margin-bottom:8px;
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.print-btn,
+.download-btn{
+
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    margin:8px;
+    transition:.3s;
+
+}
+
+.print-btn{
+
+    background:#0d6efd;
+    color:white;
+
+}
+
+.print-btn:hover{
+
+    background:#0b5ed7;
+
+}
+
+.download-btn{
+
+    background:#198754;
+    color:white;
+
+}
+
+.download-btn:hover{
+
+    background:#157347;
+
+}
+
+/* ===========================================
+   NO CERTIFICATE
+=========================================== */
+
+.no-certificate{
+
+    text-align:center;
+    margin:100px auto;
+    color:#666;
+
+}
+
+.no-certificate i{
+
+    font-size:70px;
+    color:#dc3545;
+    margin-bottom:20px;
+
+}
+
+.no-certificate h2{
+
+    color:#dc3545;
+    margin-bottom:15px;
+    font-size:32px;
+
+}
+
+.no-certificate p{
+
+    font-size:18px;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+        padding:20px;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+        margin-top:15px;
+        gap:15px;
+
+    }
+
+    .certificate{
+
+        padding:25px;
+
+    }
+
+    .certificate h1{
+
+        font-size:30px;
+
+    }
+
+    .certificate h2{
+
+        font-size:24px;
+
+    }
+
+    .certificate h3{
+
+        font-size:22px;
+
+    }
+
+    .details{
+
+        flex-direction:column;
+
+    }
+
+    .signature{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+}
+
+/* ===========================================
+   PRINT
+=========================================== */
+
+@media print{
+
+    nav,
+    .print-btn,
+    .download-btn{
+
+        display:none;
+
+    }
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .certificate{
+
+        border:5px solid #000;
+        box-shadow:none;
+        page-break-after:always;
+
+    }
+
+}

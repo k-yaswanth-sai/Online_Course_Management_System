@@ -1,0 +1,119 @@
+/* ==========================
+   SIGN IN PAGE
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   LOGIN CONTAINER
+========================== */
+
+.login-container{
+    width:380px;
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-container h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:25px;
+}
+
+/* ==========================
+   INPUT GROUP
+========================== */
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:600;
+    color:#444;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 5px rgba(13,110,253,0.3);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0b5ed7;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+.login-container p{
+    text-align:center;
+    margin-top:18px;
+    color:#555;
+}
+
+.login-container a{
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.login-container a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:480px){
+
+    .login-container{
+        width:90%;
+        padding:25px;
+    }
+
+}
