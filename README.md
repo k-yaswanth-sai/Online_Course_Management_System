@@ -100,7 +100,7 @@ The project uses **Browser Local Storage** to store data, so no external databas
 1. Clone the repository:
 
 ```bash
-git clone <[your-github-repository-url](https://github.com/NomithaPathivada/Online_Course_Management_System)>
+git clone <https://github.com/NomithaPathivada/Online_Course_Management_System>
 ```
 
 2. Open the project folder.
