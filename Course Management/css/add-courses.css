@@ -1,0 +1,134 @@
+/* ==========================
+   ADD / EDIT COURSE PAGE
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* ==========================
+   FORM CONTAINER
+========================== */
+
+.course-container{
+    width:100%;
+    max-width:600px;
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.course-container h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:25px;
+}
+
+/* ==========================
+   FORM GROUP
+========================== */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 6px rgba(13,110,253,0.3);
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0b5ed7;
+}
+
+/* ==========================
+   BACK LINK
+========================== */
+
+.back-link{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.back-link:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:600px){
+
+    .course-container{
+        padding:25px;
+    }
+
+    .course-container h2{
+        font-size:24px;
+    }
+
+    button{
+        font-size:15px;
+    }
+
+}

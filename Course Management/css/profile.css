@@ -1,0 +1,278 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:#1565c0;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo span{
+    margin-left:10px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#ffd54f;
+}
+
+.logout{
+    background:#dc3545;
+    padding:8px 15px;
+    border-radius:6px;
+}
+
+.logout:hover{
+    background:#bb2d3b;
+    color:white;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.profile-container{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+}
+
+/* ==========================
+   PROFILE CARD
+========================== */
+
+.profile-card{
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    padding:40px;
+}
+
+.profile-card h2{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* ==========================
+   PROFILE IMAGE
+========================== */
+
+.profile-image{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.profile-image img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #1565c0;
+    background:#eee;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color:#1565c0;
+    outline:none;
+    box-shadow:0 0 5px rgba(21,101,192,.3);
+}
+
+.form-group input:disabled{
+    background:#ececec;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.update-btn{
+    width:100%;
+    padding:14px;
+    background:#1565c0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.update-btn:hover{
+    background:#0d47a1;
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat-card i{
+    font-size:35px;
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.stat-card h3{
+    font-size:32px;
+    color:#1565c0;
+}
+
+.stat-card p{
+    margin-top:10px;
+    color:#666;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .profile-card{
+        padding:25px;
+    }
+
+    .profile-image img{
+        width:120px;
+        height:120px;
+    }
+
+    .profile-card h2{
+        font-size:26px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .profile-card{
+        padding:20px;
+    }
+
+    .update-btn{
+        font-size:15px;
+    }
+
+}
