@@ -1,0 +1,210 @@
+/* ==========================================
+   RESPONSIVE CSS
+   Online Course Management Portal
+========================================== */
+
+/* Large Screens (1200px and below) */
+@media (max-width:1200px){
+
+    .container,
+    .dashboard,
+    .course-container,
+    .profile-card,
+    .certificate{
+        width:95%;
+    }
+
+    .dashboard-grid,
+    .course-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Tablets (992px and below) */
+@media (max-width:992px){
+
+    header,
+    nav{
+        padding:15px 20px;
+    }
+
+    .dashboard-grid,
+    .course-grid,
+    .stats,
+    #progressContainer,
+    #courseContainer,
+    #courseList,
+    #filteredCourses,
+    #searchResults{
+        grid-template-columns:1fr;
+    }
+
+    .certificate{
+        padding:30px;
+    }
+
+    .profile-card,
+    .course-container,
+    form{
+        width:100%;
+    }
+
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    header,
+    nav{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        width:100%;
+    }
+
+    nav ul li{
+        margin:8px 0;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .hero{
+        height:auto;
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .feature-container{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .course-card,
+    .profile-card,
+    .certificate{
+        padding:20px;
+    }
+
+    button,
+    .btn{
+        width:100%;
+        margin-top:10px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:16px;
+    }
+
+}
+
+/* Small Mobile Devices (576px and below) */
+@media (max-width:576px){
+
+    .login-container,
+    .signup-container,
+    .course-container,
+    .profile-card{
+        padding:20px;
+    }
+
+    .certificate{
+        padding:20px;
+        border-width:4px;
+    }
+
+    .certificate h1{
+        font-size:26px;
+    }
+
+    .certificate h2{
+        font-size:22px;
+    }
+
+    .certificate h3{
+        font-size:18px;
+    }
+
+    .page-title{
+        font-size:26px;
+    }
+
+    .progress{
+        height:20px;
+    }
+
+    .progress-bar{
+        line-height:20px;
+        font-size:12px;
+    }
+
+}
+
+/* Extra Small Devices (400px and below) */
+@media (max-width:400px){
+
+    h1{
+        font-size:24px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    p{
+        font-size:14px;
+    }
+
+    button{
+        padding:10px;
+        font-size:14px;
+    }
+
+    input,
+    select,
+    textarea{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .course-card{
+        padding:15px;
+    }
+
+    .profile-image{
+        width:80px;
+        height:80px;
+        font-size:28px;
+    }
+
+    .certificate{
+        padding:15px;
+    }
+
+}

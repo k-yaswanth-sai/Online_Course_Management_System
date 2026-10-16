@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | CourseHub</title>
+
+    <link rel="stylesheet" href="css/certificate.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                📚 <span>CourseHub</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="certificate.html" class="active">Certificates</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="signin.html" class="logout">Logout</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>
+            <i class="fa-solid fa-award"></i>
+            My Certificates
+        </h1>
+
+        <p>
+            Certificates are automatically generated after completing a course.
+        </p>
+
+    </section>
+
+    <!-- ================= CERTIFICATES ================= -->
+
+    <section class="certificate-container">
+
+        <div id="certificateList">
+
+            <!-- Certificates will be loaded here dynamically -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= NO CERTIFICATES ================= -->
+
+    <section id="noCertificate" class="no-certificate" style="display:none;">
+
+        <i class="fa-solid fa-certificate"></i>
+
+        <h2>No Certificates Available</h2>
+
+        <p>
+            Complete a course with <strong>100% progress</strong> to earn your first certificate.
+        </p>
+
+    </section>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/certificate.js"></script>
+
+</body>
+
+</html>

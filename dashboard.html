@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Online Course Management System</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            📚 <span>CourseHub</span>
+        </div>
+
+
+        <ul class="nav-links">
+            <li></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a href="courses.html">Courses</a></li>
+
+            <li><a href="progress.html">Progress</a></li>
+
+            <li><a href="certificate.html">Certificates</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+            <li>
+                <a href="signin.html" class="logout">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main class="main-content">
+
+
+
+<header class="topbar">
+
+    <div>
+
+        <h1>Student Dashboard</h1>
+
+        <p>
+            Welcome back,
+            <span id="studentName">
+                Student
+            </span>
+            👋
+        </p>
+
+    </div>
+
+
+</header>
+
+
+
+
+
+<section class="cards">
+
+
+
+<div class="card">
+
+    <i class="fa-solid fa-book"></i>
+
+    <h3>
+        Total Courses
+    </h3>
+
+    <!-- Dynamic value -->
+    <p id="totalCourses">
+        0
+    </p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+    <i class="fa-solid fa-user-graduate"></i>
+
+    <h3>
+        Enrolled Courses
+    </h3>
+
+
+    <!-- Dynamic value -->
+    <p id="enrolledCourses">
+        0
+    </p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+    <i class="fa-solid fa-circle-check"></i>
+
+
+    <h3>
+        Completed
+    </h3>
+
+
+    <!-- Dynamic value -->
+    <p id="completedCourses">
+        0
+    </p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+    <i class="fa-solid fa-trophy"></i>
+
+
+    <h3>
+        Certificates
+    </h3>
+
+
+    <!-- Dynamic value -->
+    <p id="certificateCount">
+        0
+    </p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>

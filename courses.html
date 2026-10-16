@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Online Course Management System</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="header">
+
+    <nav class="navbar">
+        <div class="logo">
+            📚 <span>CourseHub</span>
+        </div>
+        <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Search and Filter -->
+<section class="top-section">
+
+    <input
+        type="text"
+        id="searchCourse"
+        placeholder="🔍 Search courses...">
+
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Programming">Programming</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Database">Database</option>
+        <option value="Cloud">Cloud Computing</option>
+        <option value="Cyber Security">Cyber Security</option>
+    </select>
+
+</section>
+<br>
+<!-- Course List -->
+<section class="course-container" id="courseContainer">
+
+    <div class="course-card">
+
+        <img src="images/java.jpg" alt="Java">
+
+        <h3>Java Programming</h3>
+
+        <p>
+            Learn Core Java, OOP concepts, Collections,
+            Exception Handling, and JDBC.
+        </p>
+
+        <span class="category">Programming</span>
+
+        <div class="course-info">
+            <span>👨‍🏫 John Smith</span>
+            <span>8 Weeks</span>
+        </div>
+
+        <button class="enroll-btn"
+data-id="1"
+data-name="Java Programming"
+data-category="Programming"
+data-instructor="John Smith"
+data-duration="8 Weeks">
+Enroll Now
+</button>
+
+    </div>
+
+    <div class="course-card">
+
+        <img src="images/htmlcss.jpg" alt="HTML">
+
+        <h3>HTML & CSS</h3>
+
+        <p>
+            Build responsive websites using HTML5,
+            CSS3 and Flexbox.
+        </p>
+
+        <span class="category">Web Development</span>
+
+        <div class="course-info">
+            <span>👨‍🏫 Sarah Johnson</span>
+            <span>6 Weeks</span>
+        </div>
+
+        <button class="enroll-btn"
+data-id="2"
+data-name="HTML & CSS"
+data-category="Web Development"
+data-instructor="Sarah Johnson"
+data-duration="6 Weeks">
+Enroll Now
+</button>
+
+    </div>
+
+    <div class="course-card">
+
+        <img src="images/javascript.jpg" alt="JavaScript">
+
+        <h3>JavaScript</h3>
+
+        <p>
+            Master JavaScript ES6, DOM manipulation,
+            events and APIs.
+        </p>
+
+        <span class="category">Web Development</span>
+
+        <div class="course-info">
+            <span>👨‍🏫 David Brown</span>
+            <span>7 Weeks</span>
+        </div>
+
+        <button class="enroll-btn"
+data-id="3"
+data-name="JavaScript"
+data-category="Web Development"
+data-instructor="David Brown"
+data-duration="7 Weeks">
+Enroll Now
+</button>
+
+    </div>
+
+    <div class="course-card">
+
+        <img src="images/mysql.jpg" alt="MySQL">
+
+        <h3>MySQL Database</h3>
+
+        <p>
+            Learn SQL queries, joins, functions,
+            indexing and database design.
+        </p>
+
+        <span class="category">Database</span>
+
+        <div class="course-info">
+            <span>👨‍🏫 Emily Davis</span>
+            <span>5 Weeks</span>
+        </div>
+
+       <button class="enroll-btn"
+data-id="4"
+data-name="MySQL Database"
+data-category="Database"
+data-instructor="Emily Davis"
+data-duration="5 Weeks">
+Enroll Now
+</button>
+
+    </div>
+
+    <div class="course-card">
+
+        <img src="images/cloud.jpg" alt="Cloud">
+
+        <h3>AWS Cloud Basics</h3>
+
+        <p>
+            Learn cloud computing concepts,
+            EC2, S3, IAM and deployment.
+        </p>
+
+        <span class="category">Cloud</span>
+
+        <div class="course-info">
+            <span>👨‍🏫 Michael Lee</span>
+            <span>6 Weeks</span>
+        </div>
+
+        <button class="enroll-btn"
+data-id="5"
+data-name="AWS Cloud Basics"
+data-category="Cloud"
+data-instructor="Michael Lee"
+data-duration="6 Weeks">
+Enroll Now
+</button>
+
+    </div>
+
+    <div class="course-card">
+
+        <img src="images/cybersecurity.jpg" alt="Cyber Security">
+
+        <h3>Cyber Security</h3>
+
+        <p>
+            Learn ethical hacking,
+            network security and penetration testing.
+        </p>
+
+        <span class="category">Cyber Security</span>
+
+        <div class="course-info">
+            <span>👨‍🏫 Robert Wilson</span>
+            <span>8 Weeks</span>
+        </div>
+
+        <button class="enroll-btn"
+data-id="6"
+data-name="Cyber Security"
+data-category="Cyber Security"
+data-instructor="Robert Wilson"
+data-duration="8 Weeks">
+Enroll Now
+</button>
+
+    </div>
+
+</section>
+
+<script src="js/course.js"></script>
+
+</body>
+</html>
